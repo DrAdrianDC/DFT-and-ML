@@ -12,4 +12,4 @@ the exploration of materials for catalysis, with a significance to assisting in 
 
 # Dataset
 
-The full dataset was obtained from DFT calculations. 
+The full dataset was obtained from DFT calculations. (See Data.xlsx)
