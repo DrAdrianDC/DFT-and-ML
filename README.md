@@ -1,6 +1,6 @@
 # Overview
 
-This project is about Machine Learning and DFT, and it is part of my Postdoc research at Vanderbilt University.
+This project is about DFT and Machine Learning, and it is part of my Postdoc research at Vanderbilt University.
 The title of the contribution is DFT and Machine Learning for predicting Hydrogen Adsorption Energies on rocksalt
 complex oxides.
 
