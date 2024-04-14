@@ -4,6 +4,11 @@ This project is about DFT and Machine Learning, and it is part of my Postdoc res
 The title of the contribution is:  
 #### "DFT and Machine Learning for predicting Hydrogen Adsorption Energies on rocksalt complex oxides."
 
+![Graphical-Abstract-Fig](https://github.com/DrAdrianDC/DFT-and-ML/assets/157868503/6a7224a3-3ad0-434d-9aad-82353655cd47)
+
+
+
+
 The prediction of hydrogen adsorption energies on complex oxides by integrating DFT calculations and Machine Learning is considered. 
 In particular, 14 descriptors for electronic and geometric properties evaluation are adapted within a 336 hydrogen adsorption energy 
 dataset created. Supervised learning techniques were explored to establish an accurate predictive model. With the Deep Neural Network 
