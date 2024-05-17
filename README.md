@@ -16,6 +16,13 @@ results, a MAE of about 0.06 eV is achieved. This research highlights the synerg
 the exploration of materials for catalysis, with a significance to assisting in the understanding of structure-reactivity relationship of high-entropy oxides.
 
 
+# Project
+
+    Description: Predicting Hydrogen Adsorption Energies on rocksalt complex oxides..
+    Tools & Techniques: Python, pandas, scikit-learn, tensorflow, keras, Linear Regression, 
+    Random Forest, Neural networks, Deep Learning, data visualization
+    Links: GitHub Repository
+
 # Requirements
 
 * Python 3.8.3
