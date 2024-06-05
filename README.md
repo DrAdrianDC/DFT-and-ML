@@ -1,13 +1,13 @@
 # Overview
 
 This project is about Density Functional Theory (DFT) and Machine Learning applied to Physical Chemistry, and it is part of my Postdoc research at Vanderbilt University.
-The title of the contribution is:  
+The title of the publication is:  
 #### "DFT and machine learning for predicting hydrogen adsorption energies on rocksalt complex oxides."
 
 ![Graphical-Abstract-Fig](https://github.com/DrAdrianDC/DFT-and-ML/assets/157868503/6a7224a3-3ad0-434d-9aad-82353655cd47)
 
 
-
+Now available: https://link.springer.com/article/10.1007/s00214-024-03124-x
 
 The prediction of hydrogen adsorption energies on complex oxides by integrating DFT calculations and Machine Learning is considered. 
 In particular, 14 descriptors for electronic and geometric properties evaluation are adapted within a 336 hydrogen adsorption energy 
