@@ -6,7 +6,7 @@ The title of the publication is:
 
 ![Graphical-Abstract-Fig](https://github.com/DrAdrianDC/DFT-and-ML/assets/157868503/6a7224a3-3ad0-434d-9aad-82353655cd47)
 
-
+Published on Theoretical Chemistry Accounts, part of the collection Machine Learning meets Quantum Chemistry
 Now available: https://link.springer.com/article/10.1007/s00214-024-03124-x
 
 The prediction of hydrogen adsorption energies on complex oxides by integrating DFT calculations and Machine Learning is considered. 
