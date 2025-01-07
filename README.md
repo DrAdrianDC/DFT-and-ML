@@ -37,3 +37,8 @@ the exploration of materials for catalysis, with a significance to assisting in 
 # Dataset
 
 The full dataset was obtained from DFT calculations. (See Data.xlsx)
+
+
+
+# License
+This repository is licensed under a **Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License**. For more details, see the LICENSE file.
