@@ -23,15 +23,6 @@ the exploration of materials for catalysis, with a significance to assisting in 
     Random Forest, Neural networks, Deep Learning, data visualization
     Links: GitHub Repository
 
-# Requirements
-
-* Python 3.8.3
-* TensorFlow 2.10.0
-* Pandas 1.0.5
-* Numpy 1.23.4
-* Scikit-learn 1.3.2
-* Keras 2.10.0
-
 
 
 ## Dataset Overview
@@ -67,5 +58,17 @@ To model $E_{\text{ads}}$ without computationally heavy DFT structural relaxatio
 * **Input Features:** 14 (6 electronic/chemical + 5 BLVE structural + 4 local composition counts)
 * **Target Feature:** 1 (`Eads`)
 * **Format:** Comma-separated values (`Data.csv`), dot (`.`) decimal separator, UTF-8 encoding.
+
+# Requirements
+
+* Python 3.8.3
+* TensorFlow 2.10.0
+* Pandas 1.0.5
+* Numpy 1.23.4
+* Scikit-learn 1.3.2
+* Keras 2.10.0
+
+
+
 # License
 This repository is licensed under a **Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License**. (See the LICENSE file).
