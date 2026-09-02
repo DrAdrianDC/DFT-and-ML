@@ -26,9 +26,11 @@ the exploration of materials for catalysis, with a significance to assisting in 
     Links: GitHub Repository
 
 
-[![Dataset on Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Dataset-yellow.svg)](https://huggingface.co/datasets/DrAdrianDC/DFT-and-ML-rocksalt-oxides)
 
 ## Dataset Overview
+
+[![Dataset on Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Dataset-yellow.svg)](https://huggingface.co/datasets/DrAdrianDC/DFT-and-ML-rocksalt-oxides)
+
 
 The dataset (`Data.csv`) comprises **336 density functional theory (DFT) calculated surface configurations** of hydrogen adsorption energies ($E_{\text{ads}}$) on rocksalt-structure complex oxides. 
 
