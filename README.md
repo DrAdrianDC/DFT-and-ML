@@ -9,7 +9,7 @@ The title of the publication is:
 Published on Theoretical Chemistry Accounts, part of the collection Machine Learning meets Quantum Chemistry
 Available: https://link.springer.com/article/10.1007/s00214-024-03124-x
 
-[![Dataset on Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Dataset-yellow.svg)](https://huggingface.co/datasets/DrAdrianDC/DFT-and-ML-rocksalt-oxides)
+
 
 The prediction of hydrogen adsorption energies on complex oxides by integrating DFT calculations and Machine Learning is considered. 
 In particular, 14 descriptors for electronic and geometric properties evaluation are adapted within a 336 hydrogen adsorption energy 
@@ -26,6 +26,7 @@ the exploration of materials for catalysis, with a significance to assisting in 
     Links: GitHub Repository
 
 
+[![Dataset on Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Dataset-yellow.svg)](https://huggingface.co/datasets/DrAdrianDC/DFT-and-ML-rocksalt-oxides)
 
 ## Dataset Overview
 
