@@ -39,32 +39,38 @@ The full dataset was obtained from DFT calculations. (See Data.xlsx)
 
 ## Dataset 
 
-The dataset (`Data.csv`) contains **336 high-throughput Density Functional Theory (DFT) calculations** of hydrogen adsorption energies ($E_{\text{ads}}$) on rocksalt-structure complex oxides. It combines physical-chemical descriptors, electronic structure properties, and local coordination environments designed to train machine learning models for accurate $E_{\text{ads}}$ predictions without requiring full surface relaxations for new configurations.
+## Dataset Overview
 
-### Feature Dictionary
+The dataset (`Data.csv`) comprises **336 density functional theory (DFT) calculated surface configurations** of hydrogen adsorption energies ($E_{\text{ads}}$) on rocksalt-structure complex oxides. 
 
-| Feature Name | Type | Physical Meaning / Unit | Description |
+To model $E_{\text{ads}}$ without computationally heavy DFT structural relaxations, each sample is represented by a set of **14 physical-chemical, electronic, and structural descriptors** defined in detail in the [Supporting Information](Supporting-Information.pdf).
+
+---
+
+### Feature Dictionary & Descriptor Definitions
+
+| Feature Name | Type | Unit / Range | Definition & Source (SI) |
 | :--- | :--- | :--- | :--- |
-| `Eads` | `float64` | Adsorption Energy ($\text{eV}$) | **Target variable.** Hydrogen chemisorption energy on the rocksalt oxide surface. |
-| `Bader-charge` | `float64` | Atomic Charge ($e$) | Partial charge of the active adsorption site/environment computed via Bader analysis. |
-| `Ave-O2p-up` | `float64` | Band Center ($\text{eV}$) | Average energy position of the spin-up Oxygen $2p$ electronic states. |
-| `Ave-O2p-down` | `float64` | Band Center ($\text{eV}$) | Average energy position of the spin-down Oxygen $2p$ electronic states. |
-| `Ave-diff-EN` | `float64` | Electronegativity ($\Delta \text{EN}$) | Average Pauling electronegativity difference among local constituent atoms. |
-| `Ave-diff-IE` | `float64` | Ionization Energy ($\text{eV}$) | Average ionization energy difference among local surface species. |
-| `BLVE Neighbor 1–5` | `float64` | Structural / Geometric | Bond-Length / Valence-Electron environment metrics for the 1st through 5th nearest neighbors. |
-| `Freq Ni` | `int64` | Coordination Count | Frequency/count of Nickel ($\text{Ni}$) cations in the immediate local surface environment. |
-| `Freq Mg` | `int64` | Coordination Count | Frequency/count of Magnesium ($\text{Mg}$) cations in the immediate local surface environment. |
-| `Freq Cu` | `int64` | Coordination Count | Frequency/count of Copper ($\text{Cu}$) cations in the immediate local surface environment. |
-| `Freq Zn` | `int64` | Coordination Count | Frequency/count of Zinc ($\text{Zn}$) cations in the immediate local surface environment. |
+| `Eads` | `float64` | $\text{eV}$ | **Target Variable.** Hydrogen adsorption energy on the rocksalt oxide surface site ($E_{\text{ads}} = E_{\text{surf+H}} - E_{\text{surf}} - \frac{1}{2}E_{\text{H}_2}$). |
+| `Bader-charge` | `float64` | $e$ | Partial atomic charge of the active surface adsorption site, computed via Bader charge analysis. |
+| `Ave-O2p-up` | `float64` | $\text{eV}$ | Average position (band center) of the spin-up Oxygen $2p$ electronic states relative to the Fermi level. |
+| `Ave-O2p-down` | `float64` | $\text{eV}$ | Average position (band center) of the spin-down Oxygen $2p$ electronic states relative to the Fermi level. |
+| `Ave-diff-EN` | `float64` | Dimensionless | Average Pauling electronegativity difference ($\Delta\text{EN}$) between the central active oxygen site and its nearest-neighbor cations. |
+| `Ave-diff-IE` | `float64` | $\text{eV}$ | Average first ionization energy difference ($\Delta\text{IE}$) between constituent metal cations in the active local environment. |
+| `BLVE Neighbor 1–5` | `float64` | Arbitrary Units | **Bond-Length Valence-Electron (BLVE)** metrics for nearest neighbors 1 through 5, capturing local geometric distortions and local electron density overlap. |
+| `Freq Ni` | `int64` | Count [$0, 5$] | Local coordination frequency/count of Nickel ($\text{Ni}$) cations surrounding the active surface oxygen site. |
+| `Freq Mg` | `int64` | Count [$0, 5$] | Local coordination frequency/count of Magnesium ($\text{Mg}$) cations surrounding the active surface oxygen site. |
+| `Freq Cu` | `int64` | Count [$0, 5$] | Local coordination frequency/count of Copper ($\text{Cu}$) cations surrounding the active surface oxygen site. |
+| `Freq Zn` | `int64` | Count [$0, 5$] | Local coordination frequency/count of Zinc ($\text{Zn}$) cations surrounding the active surface oxygen site. |
 
-### Data Integrity & Format Specifications
+---
 
-* **File Format:** Standard Comma-Separated Values (`Data.csv`).
-* **Delimiter:** Comma (`,`).
-* **Decimal Separator:** Dot (`.`) for all IEEE 754 floating-point representations.
-* **Encoding:** UTF-8.
-* **Missing Values:** None ($336 / 336$ complete observations).
+### Summary Statistics
 
-
+* **Total Samples:** 336
+* **Missing / Null Values:** 0
+* **Input Features:** 14 (6 electronic/chemical + 5 BLVE structural + 4 local composition counts)
+* **Target Feature:** 1 (`Eads`)
+* **Format:** Comma-separated values (`Data.csv`), dot (`.`) decimal separator, UTF-8 encoding.
 # License
 This repository is licensed under a **Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License**. (See the LICENSE file).
