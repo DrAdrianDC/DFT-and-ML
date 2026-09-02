@@ -71,4 +71,5 @@ To model $E_{\text{ads}}$ without computationally heavy DFT structural relaxatio
 
 
 # License
-This repository is licensed under a **Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License**. (See the LICENSE file).
+
+This project and dataset are licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
