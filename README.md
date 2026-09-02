@@ -34,11 +34,6 @@ the exploration of materials for catalysis, with a significance to assisting in 
 
 
 
-
-The full dataset was obtained from DFT calculations. (See Data.xlsx)
-
-## Dataset 
-
 ## Dataset Overview
 
 The dataset (`Data.csv`) comprises **336 density functional theory (DFT) calculated surface configurations** of hydrogen adsorption energies ($E_{\text{ads}}$) on rocksalt-structure complex oxides. 
