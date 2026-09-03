@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this dataset or code, please cite it using these metadata."
+authors: 
+
+* family-names: "Domínguez-Castro"
+given-names: "Adrian"
+orcid: "https://orcid.org/0000-0002-6857-9042"
+title: "DFT-and-ML-rocksalt-oxides"
+version: "1.0.0"
+date-released: "2024-06-04"
+url: "https://github.com/DrAdrianDC/DFT-and-ML"
+preferred-citation:
+type: article
+authors: 
+
+  * family-names: "Domínguez-Castro"
+given-names: "Adrian"
+title: "DFT and machine learning for predicting hydrogen adsorption energies on rocksalt complex oxides"
+journal: "Theoretical Chemistry Accounts"
+volume: 143
+issue: 6
+start: 50
+year: 2024
+doi: "10.1007/s00214-024-03124-x"
